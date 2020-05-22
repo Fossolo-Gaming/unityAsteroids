@@ -156,6 +156,10 @@ public class GameController : MonoBehaviour
         gameStatsText.text = "Level " + level.ToString() + " Lives " + lives.ToString() + " Bombs " + bombs.ToString() + " Score " + score.ToString();
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 
     IEnumerator StartNewLevel(float timer)
     {
